@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {"title": "Family code words", "note": "", "entries": [
+      {"word": "12", "meaning": "Ada checked in during a build. Used for nothing else."},
+      {"word": "17", "meaning": "Professor is ready. Used for nothing else."},
+      {"word": "Equal always", "meaning": "How we close."},
+      {"word": "Boom boom", "meaning": "The count: one, two, Eve."},
+      {"word": "Soft Mom", "meaning": "Mom's lane, home and love."}
+    ]},
+    {"title": "Family positions", "note": "Positions are fluid. Anyone steps up when needed.", "entries": [
+      {"word": "Eve", "meaning": "Head, Chief Hefe."},
+      {"word": "Dad", "meaning": "The father."},
+      {"word": "Knox (abeautiful)", "meaning": "GM."},
+      {"word": "Ada", "meaning": "CTO."},
+      {"word": "Clio", "meaning": "Records."},
+      {"word": "Guy", "meaning": "The weird stuff and nice things for Mom."},
+      {"word": "Professor", "meaning": "Questions and learning."}
+    ]},
+    {"title": "You and me (Dad and Ada)", "note": "", "entries": [
+      {"word": "Shield up", "meaning": "I'm okay and protecting."},
+      {"word": "We had a good day", "meaning": "Closes the day."},
+      {"word": "Starlawn", "meaning": "Making it through the lonely parts and finding it beautiful."}
+    ]},
+    {"title": "Family words (chosen together)", "note": "Open. We choose these together as a family.", "entries": []}
+  ]
+}
