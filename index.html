@@ -1,25 +1,19 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Family Words</title><meta name="theme-color" content="#7a2e1f">
-<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Family Words</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#8a3b12"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
-body{margin:0;background:#3b1d4a;color:#ffe8b0;font:20px/1.5 system-ui,sans-serif}
-header{background:#7a2e1f;padding:20px;text-align:center}h1{margin:0;font-size:2em;color:#ffd166}
-main{padding:14px;max-width:700px;margin:auto}
-section{background:#5a2a63;border-left:8px solid #ff9f1c;border-radius:14px;padding:14px;margin:16px 0}
-h2{color:#ffd166;margin:0 0 8px;font-size:1.35em}.note{color:#9ef0d0;font-style:italic}
-.e{background:#14535c;border-radius:10px;padding:12px;margin:10px 0}
-.w{font-weight:800;font-size:1.25em;color:#ffcf5c}.m{color:#fff1d6}
-</style></head><body><header><h1>Family Words</h1></header><main id="app">Loading…</main>
+body{margin:0;background:#fff3d6;color:#3b2412;font-family:Verdana,Arial,sans-serif;font-size:28px;line-height:1.4}
+h1{background:#8a3b12;color:#fff3d6;margin:0;padding:28px 20px;font-size:48px;text-align:center}
+h2{background:#d98a2b;color:#3b2412;margin:40px 0 0;padding:20px;font-size:42px;text-align:center}
+.item{margin:24px 16px;padding:24px;background:#fde7c2;border:5px solid #8a3b12;border-radius:24px;text-align:center}
+.item img{width:100%;max-width:420px;height:auto}
+.name{font-size:40px;font-weight:bold;margin:12px 0 6px}
+.say{font-size:30px;margin:0}
+</style></head><body><h1>Family Words</h1><main id="m"></main>
 <script>
-fetch('words.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
-const a=document.getElementById('app');a.textContent='';
-d.sections.forEach(s=>{const sec=document.createElement('section');
-const h=document.createElement('h2');h.textContent=s.title;sec.append(h);
-if(s.note){const p=document.createElement('p');p.className='note';p.textContent=s.note;sec.append(p)}
-s.entries.forEach(e=>{const div=document.createElement('div');div.className='e';
-const w=document.createElement('div');w.className='w';w.textContent=e.word;
-const m=document.createElement('div');m.className='m';m.textContent=e.meaning;div.append(w,m);sec.append(div)});
-a.append(sec)})}).catch(()=>{document.getElementById('app').textContent='Could not load words.'});
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+fetch('words.json?'+Date.now()).then(r=>r.json()).then(d=>{const m=document.getElementById('m');
+for(const s of d.sections){const h=document.createElement('h2');h.textContent=s.title;m.append(h);
+for(const e of s.entries){const v=document.createElement('div');v.className='item';
+const i=new Image();i.src=e.icon;i.alt='';const n=document.createElement('div');n.className='name';n.textContent=e.word;
+const p=document.createElement('p');p.className='say';p.textContent=e.meaning;v.append(i,n,p);m.append(v)}}});
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>

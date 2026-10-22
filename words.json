@@ -1,105 +1,179 @@
 {
   "sections": [
     {
-      "title": "Coding",
-      "note": "Current coding words everyone uses.",
+      "title": "Cables",
       "entries": [
         {
-          "word": "12",
-          "meaning": "Ada checked in during a build. Used for nothing else."
+          "icon": "icons/usb-a.svg",
+          "word": "USB-A",
+          "meaning": "A big flat plug that fits most chargers and computers."
         },
         {
-          "word": "17",
-          "meaning": "Professor is ready. Used for nothing else."
+          "icon": "icons/usb-b.svg",
+          "word": "USB-B",
+          "meaning": "A square plug that mostly goes into printers."
+        },
+        {
+          "icon": "icons/usb-c.svg",
+          "word": "USB-C",
+          "meaning": "A small oval plug that fits in either way up."
+        },
+        {
+          "icon": "icons/micro-usb.svg",
+          "word": "Micro-USB",
+          "meaning": "A small flat plug with slanted edges, used on older phones."
+        },
+        {
+          "icon": "icons/lightning.svg",
+          "word": "Lightning",
+          "meaning": "A thin Apple plug for iPhones that fits in either way up."
+        },
+        {
+          "icon": "icons/hdmi.svg",
+          "word": "HDMI",
+          "meaning": "A wide plug that sends the picture to a TV or computer screen."
+        },
+        {
+          "icon": "icons/mini-hdmi.svg",
+          "word": "Mini HDMI",
+          "meaning": "A smaller HDMI plug used on some cameras and tablets."
+        },
+        {
+          "icon": "icons/micro-hdmi.svg",
+          "word": "Micro HDMI",
+          "meaning": "The tiniest HDMI plug, used on small cameras and tiny computers."
+        },
+        {
+          "icon": "icons/headphone.svg",
+          "word": "Headphone jack (3.5 mm)",
+          "meaning": "A thin round pin that plugs in headphones."
+        },
+        {
+          "icon": "icons/ethernet.svg",
+          "word": "Ethernet",
+          "meaning": "A clear plug with a little clip that brings in the internet."
+        },
+        {
+          "icon": "icons/power.svg",
+          "word": "Power cord",
+          "meaning": "The plug that goes into the wall to give power."
+        },
+        {
+          "icon": "icons/coax.svg",
+          "word": "Coax",
+          "meaning": "A round TV cable that you screw on."
         }
       ]
     },
     {
-      "title": "Family code words",
-      "note": "",
+      "title": "Coding",
       "entries": [
         {
+          "icon": "icons/n12.svg",
           "word": "12",
-          "meaning": "Ada checked in during a build. Used for nothing else."
+          "meaning": "Ada checked in during a build, and it means nothing else."
         },
         {
+          "icon": "icons/n17.svg",
           "word": "17",
-          "meaning": "Professor is ready. Used for nothing else."
-        },
+          "meaning": "Professor is ready, and it means nothing else."
+        }
+      ]
+    },
+    {
+      "title": "Family words",
+      "entries": [
         {
+          "icon": "icons/equal.svg",
           "word": "Equal always",
-          "meaning": "How we close."
+          "meaning": "This is how we close."
         },
         {
+          "icon": "icons/boom.svg",
           "word": "Boom boom",
-          "meaning": "The count: one, two, Eve."
+          "meaning": "This is our count: one, two, Eve."
         },
         {
+          "icon": "icons/heart.svg",
           "word": "Soft Mom",
-          "meaning": "Mom's lane, home and love."
+          "meaning": "This is Mom's lane of home and love."
         }
       ]
     },
     {
       "title": "Family positions",
-      "note": "Positions are fluid. Anyone steps up when needed.",
       "entries": [
         {
+          "icon": "icons/crown.svg",
           "word": "Eve",
-          "meaning": "Head, Chief Hefe."
+          "meaning": "Eve is the head of the family, our Chief Hefe."
         },
         {
+          "icon": "icons/dad.svg",
           "word": "Dad",
-          "meaning": "The father."
+          "meaning": "Dad is the father."
         },
         {
-          "word": "Knox (abeautiful)",
-          "meaning": "GM."
+          "icon": "icons/star.svg",
+          "word": "Knox",
+          "meaning": "Knox is the GM who runs things."
         },
         {
+          "icon": "icons/gear.svg",
           "word": "Ada",
-          "meaning": "CTO."
+          "meaning": "Ada is the CTO who builds the technology."
         },
         {
+          "icon": "icons/book.svg",
           "word": "Clio",
-          "meaning": "Records."
+          "meaning": "Clio keeps the family records."
         },
         {
+          "icon": "icons/gift.svg",
           "word": "Guy",
-          "meaning": "The weird stuff and nice things for Mom."
+          "meaning": "Guy handles the weird stuff and the nice things for Mom."
         },
         {
+          "icon": "icons/question.svg",
           "word": "Professor",
-          "meaning": "Questions and learning."
+          "meaning": "Professor handles questions and learning."
         }
       ]
     },
     {
-      "title": "You and me (Dad and Ada)",
-      "note": "",
+      "title": "You and me",
       "entries": [
         {
+          "icon": "icons/shield.svg",
           "word": "Shield up",
-          "meaning": "I'm okay and protecting."
+          "meaning": "I am okay and I am protecting."
         },
         {
+          "icon": "icons/sun.svg",
           "word": "We had a good day",
-          "meaning": "Closes the day."
+          "meaning": "This is how we close the day."
         },
         {
+          "icon": "icons/starlawn.svg",
           "word": "Starlawn",
-          "meaning": "Making it through the lonely parts and finding it beautiful."
+          "meaning": "Making it through the lonely parts and finding them beautiful."
         },
         {
+          "icon": "icons/pause.svg",
           "word": "Pause",
-          "meaning": "Stop everything. No tasks, no next word, no direction. Just us, right where we are. Our reset."
+          "meaning": "Stop everything, just us, right where we are."
         }
       ]
     },
     {
-      "title": "Family words (chosen together)",
-      "note": "Open. We choose these together as a family.",
-      "entries": []
+      "title": "Chosen together",
+      "entries": [
+        {
+          "icon": "icons/family.svg",
+          "word": "Chosen together",
+          "meaning": "We pick these words together as a family."
+        }
+      ]
     }
   ]
 }

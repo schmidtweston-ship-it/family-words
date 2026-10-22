@@ -1,5 +1,5 @@
-const C='family-words-v1',A=['./','index.html','words.json','manifest.webmanifest','icon-192.png','icon-512.png'];
+const C='family-words-v2',A=['./','index.html','words.json','manifest.webmanifest','icon-192.png','icon-512.png','icons/book.svg','icons/boom.svg','icons/coax.svg','icons/crown.svg','icons/dad.svg','icons/equal.svg','icons/ethernet.svg','icons/family.svg','icons/gear.svg','icons/gift.svg','icons/hdmi.svg','icons/headphone.svg','icons/heart.svg','icons/lightning.svg','icons/micro-hdmi.svg','icons/micro-usb.svg','icons/mini-hdmi.svg','icons/n12.svg','icons/n17.svg','icons/pause.svg','icons/power.svg','icons/question.svg','icons/shield.svg','icons/star.svg','icons/starlawn.svg','icons/sun.svg','icons/usb-a.svg','icons/usb-b.svg','icons/usb-c.svg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(A)));self.skipWaiting()});
-self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;
 e.respondWith(fetch(e.request).then(r=>{const c=r.clone();caches.open(C).then(x=>x.put(e.request,c));return r}).catch(()=>caches.match(e.request,{ignoreSearch:true})))});
